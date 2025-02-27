@@ -254,6 +254,14 @@ main{
         text-align: center;
     }
 
+    .meios-contato{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        flex-wrap: wrap;
+    }
+
 }
 
 
@@ -310,17 +318,46 @@ main{
     .menu-hamburger{
         position: fixed;
         top: 0;
-        width: 100%;
+        left: 0;
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        box-sizing: border-box;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 8px;
+        padding: 0px 10px 0px 10px;
+        z-index: 1;
     }
 
-    .nav-hamburguer{
+    .menu-header{
+     display: flex;
+     justify-content: space-between;
+     background-color: #3592df;
+     padding: 20px;
+     width: 100%;
+     top: 0;
+    }
+
+    .links_header_menu_hamburguer{
+        position: fixed;
+        right: 0;
         display: flex;
         flex-direction: column;
         background-color: #3592df;
-        padding: 50px;
+        padding:100px;
+        height: 100vh;
+    }
+
+    .links_header_menu_hamburguer a{
+        color: #fff;
+        text-decoration: none;
+    }
+ 
+
+    .links_header_menu_hamburguer a:hover{
+        border-bottom: 2px solid #032244;
+        color: #054080;
     }
    
 
