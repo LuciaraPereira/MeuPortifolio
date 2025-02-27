@@ -239,20 +239,89 @@ main{
     width: 25px;
 }
 
+.menu-hamburger{
+    display: none;
+}
+
+@media (max-width: 1135px){
+    .sobre{
+        display: flex;
+        flex-direction: column-reverse;
+      
+    }
+      
+    .titulo_sobre{
+        text-align: center;
+    }
+
+}
+
+
 
 @media (max-width: 750px){
+    header{
+        display: none;
+    }
+
     main{
-        padding: 20px;
+        padding: 5px;
+        font-size: 14px;
+        align-items: center;
+        justify-content: center;
     }
 
     .inicio{
         margin-top: 80px;
+       gap: 0;
     }
 
     .inicio img{
-        width: 150px;
-        height: auto;
-        margin-left: -25px;
+     display: none;
     }
+
+    .textos_inicio{
+       flex-wrap: wrap;
+        width: 100%;
+        
+    }
+
+    .btn-curriculo{
+        text-align: center;
+    }
+    
+
+    .sobre{
+        gap: 20px;
+        margin: 10px;
+        text-align: center;
+    }
+    
+  
+
+    .img_perfil{
+        border-radius: 200px 400px 200px 60px;
+        border: 1px solid #032244;
+        padding: 3px;
+        width: 200px;
+        height: auto;
+    }
+    
+
+    .menu-hamburger{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-hamburguer{
+        display: flex;
+        flex-direction: column;
+        background-color: #3592df;
+        padding: 50px;
+    }
+   
 
 }
