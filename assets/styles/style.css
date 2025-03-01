@@ -267,6 +267,7 @@ main{
 
 
 @media (max-width: 750px){
+
     header{
         display: none;
     }
@@ -337,6 +338,19 @@ main{
      padding: 20px;
      width: 100%;
      top: 0;
+    }
+
+    .nav-hamburguer{
+        display: none;
+    }
+
+    .nav-hamburguer.ativa {
+        display: block; /* Mostra o menu quando a classe 'ativa' for adicionada */
+    }
+
+    .btn-menu{
+      padding-right: 30px;
+      cursor: pointer;
     }
 
     .links_header_menu_hamburguer{
