@@ -345,7 +345,7 @@ main{
     }
 
     .nav-hamburguer.ativa {
-        display: block; /* Mostra o menu quando a classe 'ativa' for adicionada */
+        display: block; 
     }
 
     .btn-menu{
